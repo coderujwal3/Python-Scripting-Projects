@@ -88,3 +88,61 @@ Location Report of 'Blw varanasi'
 }
 -------------------------------------------------------
 ```
+
+# 🦆 DuckDuckGo Search & Video Data Scraper
+A Python CLI utility that fetches search results and video metadata from DuckDuckGo and optionally stores the data in a structured text file.
+This project is useful for:
+- quick research,
+- collecting URLs,
+- extracting video information,
+- or building datasets for further analysis.
+
+## ✨ Features:
+✅ Fetch text search results (title + URL)
+✅ Fetch video search results with rich metadata
+✅ Control number of results dynamically
+✅ Save output with timestamps
+✅ Clean terminal formatting
+✅ Async execution for better structure
+
+## 🛠️ Tech Stack
+- Python
+- DuckDuckGo Search API (ddgs)
+- AsyncIO
+- JSON
+
+## Project File Structure
+```
+.
+├── search.py              # Main script
+├── search_results.txt     # Saved video data (generated)
+└── README.md
+```
+
+## ⚙️ Installation
+### 1️⃣ Clone the repository
+```
+git clone https://github.com/coderujwal3/Python-Scripting-Projects.git
+```
+
+### 2️⃣ Create virtual environment (recommended)
+```
+python -m venv venv
+source venv/bin/activate      # Linux / Mac
+venv\Scripts\activate         # Windows
+```
+
+### 3️⃣ Install dependencies
+```
+pip install ddgs
+```
+
+## ▶️ Usage
+```
+python search.py "your query"
+```
+
+The script will then ask:
+- Enter the number of results you want to fetch:
+- After printing the results, it will ask:
+- Want to save this videos data in a file? (y/n):
