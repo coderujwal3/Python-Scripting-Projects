@@ -137,7 +137,7 @@ venv\Scripts\activate         # Windows
 pip install ddgs
 ```
 
-## ▶️ Usage
+### ▶️ Usage
 ```
 python search.py "your query"
 ```
